@@ -231,33 +231,6 @@ code{
     text-transform: lowercase;
 }
 
-#cover{
-	flex-direction: row;
-	justify-content: flex-start;
-	
-	h2{
-		box-sizing: border-box;
-		padding: 0.5em;
-		font-size: 4rem;
-		font-weight: 100;
-		width: 50%;
-	}
-}
-
-#gsap-code code{
-	position: relative;
-}
-
-#webgl-code code{
-	font-size: 12px;
-	font-weight: bold;
-	overflow-y: scroll;
-}
-
-.threejs-code code{
-	font-size: 2rem;
-}
-
 code.highlight{
 	color: rgba(255, 255, 255, 0.25);
 	
@@ -267,31 +240,6 @@ code.highlight{
 		font-style: inherit;
 		letter-spacing: inherit;
 	}
-}
-
-#surrogates{
-	background-image: url(../assets/images/surrogates.jpg);
-	background-size: cover;
-}
-
-#tools{
-	h2{
-		z-index: -1;
-	}
-}
-
-#pixar{
-	background-image: url(../assets/images/sully.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-
-#word-girl-psd{
-	background-image:  url(../assets/images/wordgirl-psd.png);
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 #resources{

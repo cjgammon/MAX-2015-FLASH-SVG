@@ -26,9 +26,7 @@ define(function (require) {
 			{cl: 'video', view: VideoView},
 			{cl: 'youtube', view: YoutubeView},
 			{cl: 'in-out', view: InOutView},
-			{cl: 'sequence', view: SequenceView},
-			{id: 'me', view: MyView},
-			{id: 'gsap-code', view: GSAPCodeView}
+			{cl: 'sequence', view: SequenceView}
 		],
 	
         initialize: function () {

@@ -10,8 +10,6 @@ define(function (require) {
 		DeckView; 
 		
 	require('tweenmax');
-	require('three');
-	require('vendor/CSS3DRenderer');
 	
 	DeckView = Backbone.View.extend({
 		

@@ -16,7 +16,6 @@ define(function (require) {
 		Slides = require('pres/collections/slides'),
 		Slide = require('pres/models/slide'),
 		ProgressBar = require('pres/views/progress-bar'),
-		CameraPath = require('app/models/camera-path'),
 		UserEvent = require('pres/events/user-event'),
 		AppEvent = require('pres/events/app-event');
 
@@ -44,7 +43,6 @@ define(function (require) {
 						
             this.progressBar = new ProgressBar();
 			
-			CameraPath.initialize();
             Backbone.history.start();
 			
             $('li').css('opacity', '0');
@@ -78,28 +76,8 @@ define(function (require) {
 			
 			pos = slide.get('view').$el.data('pos');
 			
-			TweenMax.killAll();
-			
-			if (typeof(pos) !== 'undefined') {
-				
-				if (this.first === true) {
-					CameraPath.delta = parseFloat(pos);
-					AppEvent.trigger('resolve');
-				} else {
-					new TweenMax.to(CameraPath, 4, {
-						delta: parseFloat(pos),
-						onUpdate: function () {
-							AppEvent.trigger('animate');
-						},
-						onComplete: function () {
-							AppEvent.trigger('resolve');
-						}
-					});
-				}
-				
-			} else {
-				AppEvent.trigger('resolve');
-			}
+			//TweenMax.killAll();
+			AppEvent.trigger('resolve');
 
 			this.first = false;
 			this.progressBar.render();

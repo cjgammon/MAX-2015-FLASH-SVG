@@ -42,7 +42,7 @@ define(function (require) {
 		},
 		
 		handleNormalSlide: function () {
-			var slide = slide = Vars.get('slides').at(Vars.get('currentSlide'));
+			var slide = Vars.get('slides').at(Vars.get('currentSlide'));
 			
 			if (typeof(currentSlide) !== 'undefined' && currentBg) {
 				currentBg.destroy();
