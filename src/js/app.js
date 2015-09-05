@@ -26,6 +26,7 @@ define(function (require) {
 			{cl: 'video', view: VideoView},
 			{cl: 'youtube', view: YoutubeView},
 			{cl: 'in-out', view: InOutView},
+			{id: 'me', view: MyView},
 			{cl: 'sequence', view: SequenceView}
 		],
 	

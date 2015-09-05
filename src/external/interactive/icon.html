@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        #icon{
+            background-color: #FFFFFF;
+        }
+        </style>
+        </head> 
+        
+        <body> 
+    <script src="./SnapSVGAnimator/js/vendor/snap.svg/snap.svg.js"></script>
+    <script src="./SnapSVGAnimator/js/SnapSVGAnimator.js"></script>
+
+    <script type="text/javascript"> 
+        var jsonfile = "icon.json",
+            fps = 24,
+            width = 100,
+            height = 100,
+            comp,
+            AJAX_req;
+
+    AJAX_JSON_Req(jsonfile);
+
+    function handle_AJAX_Complete() {
+        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
+        {
+            json = JSON.parse(AJAX_req.responseText);
+            comp = new SVGAnim(
+                           json,
+                           width,
+                           height);   
+        }
+    }
+
+    function AJAX_JSON_Req( url )
+    {
+        AJAX_req = new XMLHttpRequest();
+        AJAX_req.open("GET", url, true);
+        AJAX_req.setRequestHeader("Content-type", "application/json");
+        
+        AJAX_req.onreadystatechange = handle_AJAX_Complete;
+        AJAX_req.send();
+    }
+
+    document.addEventListener('mousedown', function () {
+        if (comp) {
+            comp.play();
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        if (comp) {
+            comp.pause();
+        }
+    });
+
+            </script>
+        </body>
+        </html>

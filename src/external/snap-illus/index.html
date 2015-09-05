@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>snap example</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #mysvg{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <svg id="mysvg" width="600" height="540" viewBox="0 0 600 540" preserveAspectRatio="xMidYMid meet">
+    </svg>
+    <script src="snap.svg-min.js"></script>
+    <script>
+        var s = new Snap('#mysvg');
+
+        Snap.load('dragon.svg', function (f) {
+            s.append(f);
+
+            var dragon = s.select('#dragon'),
+                egg = s.select('#egg');
+
+            dragon.transform('translate(160, 200) scale(0.5)');
+
+            s.click(function () {
+                egg.animate({transform: 'translate(0, -30)'},100);
+
+                setTimeout(function () {
+                    egg.animate({transform: 'translate(0, 0)'}, 50);
+                }, 100);
+            });
+
+            s.mouseover(function () {
+                dragon.animate(
+                    {
+                        transform: 'translate(0, 0) scale(1)'
+                    },
+                    300,
+                    mina.easeinout
+                );
+            });
+            
+            s.mouseout(function () {
+                dragon.animate(
+                    {
+                        transform: 'translate(160, 200) scale(0.5)'
+                    },
+                    300,
+                    mina.easeinout
+                );
+            });
+
+        });
+    </script>
+</body>
+</html>

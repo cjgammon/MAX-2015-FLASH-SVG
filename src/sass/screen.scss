@@ -242,6 +242,86 @@ code.highlight{
 	}
 }
 
+#image-format{
+    background-image: url(../assets/images/who-am-i-o.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    justify-content: flex-end;
+    padding: 5rem;
+}
+
+
+#svg-code code{
+    font-size: 2.5rem;
+}
+
+#svg-js{
+    h2{
+        margin-top: -1em;
+    }
+}
+
+@-webkit-keyframes beat{
+     0%{
+     transform: scale(0.5);
+     fill: #fbcbf2;
+     }
+     50%{
+     transform: scale(1);
+     fill: #ffffff;
+     }
+     100%{
+     transform: scale(0.5);
+     fill: #fbcbf2;
+     }
+}
+
+.heart{
+    transform-origin: 75px 75px;
+    transform: scale(0.5);
+    animation: beat 1s infinite;
+}
+
+#animation{
+    background-image: url(../assets/images/lesley.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    h2{
+        color: #222;
+    }
+}
+
+#flash{
+    background-image: url(../assets/images/isitpossible.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#c{
+    background-image: url(../assets/images/fuckme.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    justify-content: flex-end;
+    padding: 5rem;
+}
+
+#example-plugin{
+    background-image: url(../assets/images/yes.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    justify-content: flex-end;
+    padding: 5rem;
+}
+
 #resources{
 	font-size: 1rem;
 	
