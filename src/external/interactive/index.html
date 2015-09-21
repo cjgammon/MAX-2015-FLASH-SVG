@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<style>
+
+body {
+	width: 800px;
+	background: #ede3d0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	height: 100%;
+	border-right: 1px solid rgba(0,0,0,0.05);
+	border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+html {
+	background: #fff7eb;
+	padding: 0;
+	margin: 0;
+}
+
+body,html {
+	font-family: "Source Sans Pro";
+	font-weight: 100;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+div.iconbar {
+	text-align: center;
+}
+
+div.iconbar > img {
+	margin: 10px;
+}
+
+div.iconbar:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+	
+div.infoblock h2 {
+	margin: 0px;
+	font-weight: 100;
+	border: 1px solid rgba(0, 0, 0, 0);
+	font-size: 40px;	
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+}
+
+div.infoblock {
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+div.infoblock:nth-child(odd) {
+	background: #fff7eb;
+}
+
+div.infoblock.bottom {
+	background: #0f0b05;
+	color: white;
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+div.infoblock div.right img,  div.infoblock div.left img{
+	width: 45%;
+	height: 250px;
+	border: 1px solid rgba(0,0,0,0.0.2);
+	vertical-align: middle;
+}
+
+div.infoblock div.right {
+	text-align: right;
+}
+
+div.infoblock div.left {
+	text-align: left;
+}
+
+div.infoblock div.right div,  div.infoblock div.left div{
+	width: 45%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.infoblock div.right, div.infoblock div.left {
+	display: inline-block;
+	border: 1px solid  rgba(0,0,0,0.0.2);
+	vertical-align: middle;
+}
+
+div.infoblock.bottom img {
+	width: 20px;
+	height: 20px;
+}
+
+svg.icon {
+	-webkit-transform: scale(1,1);
+	transition: -webkit-transform 0.25s;
+}
+
+svg.icon:hover {
+	-webkit-transform: scale(1.2,1.2);
+}
+
+svg.icon path {
+	fill: white;
+	fill-opacity: 0.5;
+	transition: fill-opacity 1s;
+}
+
+svg.icon:hover path {
+	fill-opacity: 1;
+}
+
+#fill-me{
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="assets/Leo.svg" width="800" height="400" />
+
+ <div class="iconbar">
+    <img src="assets/Chat.svg" width="100" height="100" alt="chat"/>
+    <div id="fill-me"></div>
+    <img src="assets/Newspaper.svg" width="100" height="100" alt="news"/>
+    <img src="assets/Presentation.svg" width="100" height="100" alt="info"/>
+</div>
+
+<div class="infoblock">
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <div class="right">
+        <div>Mauris eu nunc turpis. Integer dictum metus purus, eget facilisis dolor dapibus et. 
+        	Suspendisse potenti. Sed placerat aliquam libero, quis vestibulum lorem tempus vel. 
+            Aenean sagittis sagittis mi a tempus. Nunc eleifend risus vel tortor bibendum volutpat. 
+            Praesent id tincidunt orci.</div>
+        <img src="assets/Chat.svg" width="100" height="100" alt="chat"/>
+    </div>
+</div>
+
+
+<div class="infoblock">
+	<h2>Vestibulum aliquet tempor nisi</h2>
+    
+    <div class="left">
+	    <img src="assets/Glass.svg" width="100" height="100" alt="glass"/>
+
+        <div>Quisque est turpis, porttitor et ligula id, convallis consectetur nibh. Ut malesuada ultrices nisl, sed venenatis tortor. Pellentesque ac varius dui. In auctor lacus vel posuere semper. Nam nisl turpis, imperdiet at tellus in, maximus tempor mi. Etiam quis enim tempor, scelerisque velit ac, pharetra ipsum. Nunc gravida fringilla sollicitudin. Praesent ex libero, varius a gravida eu, sollicitudin eget turpis. Praesent feugiat dolor vulputate elit tempor sagittis.</div>
+     </div>
+</div>
+
+
+<div class="infoblock">
+	<h2>Donec laoreet lacus eget</h2>
+     
+     <div class="right">
+    	<div>ANam pellentesque interdum enim, nec suscipit sem dictum non. Sed suscipit eros quis vestibulum finibus. Duis quis nunc sit amet purus aliquam porta nec non est. Nunc vel lectus at odio fringilla ullamcorper id fringilla velit. Nulla aliquam rutrum iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        
+     	<img src="assets/Newspaper.svg" width="100" height="100" alt="news"/>
+     </div>
+</div>
+
+
+<div class="infoblock bottom">
+	<svg class="facebook icon" width="20" height="20" viewBox="0 0 500 500">
+		<path d="M250,0C111.9,0,0,111.9,0,250c0,138.1,111.9,250,250,250s250-111.9,250-250C500,111.9,388.1,0,250,0z
+		 M313.1,248H274v142h-58.7V248h-29.4v-48.9h29.4v-29.4c0-39.9,16.6-63.6,63.6-63.6h39.2V155h-24.5c-18.3,0-19.6,6.8-19.6,19.6
+		l-0.1,24.5h44.4L313.1,248z"/>
+	</svg>
+    <svg class="behance icon" width="20" height="20" viewBox="0 0 500 500">
+		<g>
+			<path d="M337.9,226.4c-8.7,0-15.5,2.5-20.3,7.4c-4.8,4.9-7.8,11.7-9.1,20.1h58.6c-0.6-9.1-3.6-15.9-9.1-20.6
+				C352.6,228.7,345.9,226.4,337.9,226.4z"/>
+			<path d="M213.7,257.4c-4.2-1.9-10-2.9-17.6-3h-43.3v46.9h42.7c7.6,0,13.6-1,17.8-3.1c7.7-3.8,11.6-11.1,11.6-21.9
+				C224.9,267.1,221.2,260.8,213.7,257.4z"/>
+			<path d="M214.2,220.9c4.8-2.9,7.1-8.1,7.1-15.4c0-8.2-3.2-13.6-9.5-16.3c-5.4-1.8-12.4-2.7-20.8-2.7h-38.3v38.8
+				h42.8C203.2,225.3,209.4,223.9,214.2,220.9z"/>
+			<path d="M250,0C111.9,0,0,111.9,0,250c0,138.1,111.9,250,250,250s250-111.9,250-250C500,111.9,388.1,0,250,0z
+				 M299.7,164.1h75.4V186h-75.4V164.1z M254.2,306.8c-3.3,5.5-7.5,10.1-12.5,13.8c-5.6,4.3-12.3,7.2-19.9,8.8
+				c-7.6,1.6-15.9,2.4-24.9,2.4h-79.3V155.9h85c21.4,0.3,36.7,6.6,45.6,18.7c5.4,7.5,8.1,16.4,8.1,26.8c0,10.7-2.7,19.4-8.2,25.9
+				c-3.1,3.7-7.5,7-13.4,10c9,3.2,15.8,8.4,20.3,15.5c4.6,7.1,6.8,15.7,6.8,25.8C262.1,289.2,259.4,298.6,254.2,306.8z M321.2,303.9
+				c5.2,3.2,11.5,4.9,18.8,4.9c7.7,0,14-2,18.9-6c2.6-2.2,5-5.1,7-9h34.8c-0.9,7.7-5.1,15.6-12.6,23.5c-11.7,12.6-28,19-49,19
+				c-17.3,0-32.6-5.3-45.8-16c-13.2-10.6-19.9-28-19.9-52.1c0-22.6,6-39.8,17.9-51.9c11.9-12,27.5-18,46.5-18c11.3,0,21.5,2,30.6,6.1
+				c9.1,4.1,16.6,10.5,22.5,19.3c5.4,7.7,8.8,16.7,10.4,26.9c0.9,6,1.3,14.6,1.1,25.8h-94.8C308.2,289.5,312.7,298.6,321.2,303.9z"/>
+		</g>
+	</svg>
+    <svg class="dribble icon" width="20" height="20" viewBox="0 0 500 500">
+		<g>
+			<path d="M250,0C111.9,0,0,111.9,0,250s111.9,250,250,250s250-111.9,250-250S388.1,0,250,0z M250,447.1
+				c-108.8,0-197.1-88.2-197.1-197.1c0-108.8,88.2-197.1,197.1-197.1S447.1,141.2,447.1,250C447.1,358.9,358.9,447.1,250,447.1z"/>
+			<path d="M301.6,240.5c34.2-3.2,76.7-3.2,112.2-1.4c-2.4-36.3-16.5-69.3-38.7-95.4c-17.3,25.5-47.6,47.9-87,64.9
+				C292.9,218.9,297.3,229.6,301.6,240.5z"/>
+			<path d="M311.7,268.2c4.3,12.7,8.3,25.6,11.8,38.9c7.2,27.5,12.2,54.6,15.3,81c40.6-26.1,68.9-69.5,74.4-119.9
+				C382.5,265.9,343.9,265.5,311.7,268.2z"/>
+			<path d="M277.3,272.8c-7.1,1.5-13.2,3.3-17.9,5.4c-49.2,22.3-88.2,58.1-110.1,101.4c27.8,21.6,62.7,34.7,100.6,34.7
+				c20.5,0,40-3.9,58.1-10.8c-3.1-26.1-8.1-52.9-15.2-80.2C288.4,305.9,283.1,289.1,277.3,272.8z"/>
+			<path d="M354.8,123.6C326.4,100,289.8,85.8,250,85.8c-14,0-27.4,1.9-40.4,5.2c23.4,24,45.3,54.4,64.4,89.6
+				C309,165.8,336.9,146.2,354.8,123.6z"/>
+			<path d="M241.2,192.5c-19.5-35.2-41.8-65.3-65.5-88.9c-41.7,21.2-73,59.6-84.8,105.9c8.4,0.5,16.8,0.8,25.4,0.8
+				C161.6,210.3,204.1,203.8,241.2,192.5z"/>
+			<path d="M252.1,250.1c4-1.7,9-3.1,14.7-4.4c-3.6-8.5-7.2-16.8-11.1-25c-41.3,13.3-89.5,21.3-141.2,21.9
+				c-9.6,0.1-19-0.1-28.4-0.5c-0.1,2.6-0.3,5.2-0.3,7.8c0,41.6,15.6,79.5,41.1,108.4C151,312.1,195.5,273.8,252.1,250.1z"/>
+		</g>
+	</svg>
+    <svg class="twitter icon" width="20" height="20" viewBox="0 0 500 500" >
+		<path d="M250,0C111.9,0,0,111.9,0,250c0,138.1,111.9,250,250,250s250-111.9,250-250C500,111.9,388.1,0,250,0z
+	 M366,191.6c0.1,2.5,0.2,4.9,0.2,7.5c0,76.1-57.9,163.8-163.8,163.8c-32.5,0-62.8-9.5-88.3-25.9c4.5,0.5,9.1,0.8,13.8,0.8
+	c27,0,51.8-9.2,71.5-24.7c-25.2-0.5-46.5-17.1-53.8-40c3.5,0.7,7.1,1,10.9,1c5.3,0,10.3-0.7,15.1-2c-26.3-5.3-46.2-28.6-46.2-56.5
+	c0-0.2,0-0.5,0-0.7c7.7,4.3,16.7,6.9,26,7.2c-15.5-10.3-25.6-28-25.6-48c0-10.5,2.8-20.4,7.8-28.9c28.4,34.9,70.8,57.8,118.7,60.2
+	c-1-4.2-1.5-8.6-1.5-13.1c0-31.8,25.8-57.6,57.6-57.6c16.5,0,31.5,7,42,18.2c13.1-2.6,25.4-7.4,36.5-14
+	c-4.3,13.4-13.4,24.7-25.3,31.8c11.6-1.4,22.7-4.5,33.1-9.1C387,173.3,377.3,183.5,366,191.6z"/>
+	</svg>
+</div>
+
+<script src="./SnapSVGAnimator/js/vendor/snap.svg/snap.svg.js"></script>
+<script src="./SnapSVGAnimator/js/SnapSVGAnimator.js"></script>
+<script type="text/javascript">
+            var jsonfile = "icon.json",
+            fps = 24,
+            width = 100,
+            height = 100,
+            comp,
+            AJAX_req;
+
+    AJAX_JSON_Req(jsonfile);
+
+    function handle_AJAX_Complete() {
+        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
+        {
+            json = JSON.parse(AJAX_req.responseText);
+            comp = new SVGAnim(
+                           json,
+                           width,
+                           height);   
+
+            var container = document.getElementById('fill-me'),
+                el = comp.s.node;
+
+            container.appendChild(el);
+
+            el.addEventListener('mouseover', function () {
+                if (comp) {
+                    comp.play();
+                }
+            });
+
+            el.addEventListener('mouseout', function () {
+                if (comp) {
+                    comp.pause();
+                }
+            });
+
+        }
+    }
+
+    function AJAX_JSON_Req( url )
+    {
+        AJAX_req = new XMLHttpRequest();
+        AJAX_req.open("GET", url, true);
+        AJAX_req.setRequestHeader("Content-type", "application/json");
+        
+        AJAX_req.onreadystatechange = handle_AJAX_Complete;
+        AJAX_req.send();
+    }
+
+</script>
+</body>
+</html>

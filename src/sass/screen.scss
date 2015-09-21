@@ -242,6 +242,10 @@ code.highlight{
 	}
 }
 
+#cover{
+    color: #666;
+}
+
 #image-format{
     background-image: url(../assets/images/who-am-i-o.gif);
     background-size: cover;
@@ -302,6 +306,16 @@ code.highlight{
     background-repeat: no-repeat;
 }
 
+#state{
+    background-image: url(../assets/images/map.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+        
+    justify-content: flex-start;
+    padding: 5rem 0;
+}
+
 #c{
     background-image: url(../assets/images/fuckme.gif);
     background-size: cover;
@@ -320,6 +334,17 @@ code.highlight{
 
     justify-content: flex-end;
     padding: 5rem;
+}
+
+#roadmap {
+    background-image: url(../assets/images/future.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    justify-content: flex-start;
+    padding: 5rem;
+
 }
 
 #resources{
