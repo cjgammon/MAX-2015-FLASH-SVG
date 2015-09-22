@@ -1,6 +1,6 @@
-#Evolution of the Web
+#Animating SVG with Flash
 
-Presentation on how the web is changing presented at SXSW Interactive 2015
+Presentation on Snap.SVG Animator and Animation with SVG using Flash Professional CC 2015
 
 ##Instructions
 
@@ -13,11 +13,6 @@ To run you must do the following:
 
 ###links to projects discussed
 
-* [three.js](http://threejs.org/)
-* [mozvr](http://mozvr.com/)
-* [custom camera path tool](https://github.com/cjgammon/three.js-camera-path-tool)
-* [photoshop generator - tutorial](http://tomkrcha.com/?p=3896)
-* [photoshop generator - word girl](https://github.com/adobe-webplatform/Demo-for-PBS-Kids-Word-Girl)
 * [flash custom platform - info](https://helpx.adobe.com/flash/using/custom-platform-support.html)
 * [flash custom platform - svg plugin](https://github.com/cjgammon/Flash-Plugin-SnapPlatform)
 

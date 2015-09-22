@@ -2,14 +2,8 @@
         <html>
         <head>
         <style>
-        body{
-            overflow: hidden;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        #identity{
+            background-color: #FFFFFF;
         }
         </style>
         </head> 
@@ -19,13 +13,15 @@
     <script src="./SnapSVGAnimator/js/SnapSVGAnimator.min.js"></script>
 
     <script type="text/javascript"> 
-        var jsonfile = "cover.json",
+        var jsonfile = "identity.json",
             fps = 30,
             width = 1024,
             height = 768,
-            AJAX_req;
-
-    AJAX_JSON_Req(jsonfile);
+            AJAX_req,
+            keyframeA = 145,
+            keyframeB,
+            comp,
+            _cb;
 
     function handle_AJAX_Complete() {
         if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
@@ -37,12 +33,12 @@
                            height
                            );
             
-            comp.s.attr('preserveAspectRatio', 'xMidYMid meet');
-            comp.s.attr('viewBox', "0 0 " + width + " " + height);
+            keyframeB = parseInt(comp.movieclip.m_frameCount) - 2;
 
             setTimeout(function () {
                 comp.play();
-            }, 1000);
+                setInterval(update, 100);
+            }, 200);
         }
     }
 
@@ -56,6 +52,23 @@
         AJAX_req.send();
     }
 
+    function update() {
+        if (comp && comp.movieclip.m_currentFrameNo > keyframeA) {
+            comp.pause();
+            keyframeA = 10000;
+        } else if (comp && comp.movieclip.m_currentFrameNo > keyframeB) {
+            _cb();
+        }
+    }
+
+    window.animIn = function () {
+        AJAX_JSON_Req(jsonfile);
+    }
+
+    window.animOut = function (cb) {
+        comp.play();
+        _cb = cb;
+    }
             </script>
         </body>
         </html>
