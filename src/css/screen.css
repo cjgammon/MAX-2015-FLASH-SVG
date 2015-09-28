@@ -992,7 +992,13 @@ code.highlight em {
   background-repeat: no-repeat;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
+#animation-code-demo, #animation-timeline-demo {
+  color: #333;
+  text-shadow: 0 0 0 transparent, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, -3px -3px 0 white, -2px -3px 0 white, -1px -3px 0 white, 0px -3px 0 white, 1px -3px 0 white, 2px -3px 0 white, 3px -3px 0 white, -3px -2px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, 3px -2px 0 white, -3px -1px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, 3px -1px 0 white, -3px 0px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, 3px 0px 0 white, -3px 1px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, 3px 1px 0 white, -3px 2px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, 3px 2px 0 white, -3px 3px 0 white, -2px 3px 0 white, -1px 3px 0 white, 0px 3px 0 white, 1px 3px 0 white, 2px 3px 0 white, 3px 3px 0 white, -4px -4px 0 white, -3px -4px 0 white, -2px -4px 0 white, -1px -4px 0 white, 0px -4px 0 white, 1px -4px 0 white, 2px -4px 0 white, 3px -4px 0 white, 4px -4px 0 white, -4px -3px 0 white, -3px -3px 0 white, -2px -3px 0 white, -1px -3px 0 white, 0px -3px 0 white, 1px -3px 0 white, 2px -3px 0 white, 3px -3px 0 white, 4px -3px 0 white, -4px -2px 0 white, -3px -2px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, 3px -2px 0 white, 4px -2px 0 white, -4px -1px 0 white, -3px -1px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, 3px -1px 0 white, 4px -1px 0 white, -4px 0px 0 white, -3px 0px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, 3px 0px 0 white, 4px 0px 0 white, -4px 1px 0 white, -3px 1px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, 3px 1px 0 white, 4px 1px 0 white, -4px 2px 0 white, -3px 2px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, 3px 2px 0 white, 4px 2px 0 white, -4px 3px 0 white, -3px 3px 0 white, -2px 3px 0 white, -1px 3px 0 white, 0px 3px 0 white, 1px 3px 0 white, 2px 3px 0 white, 3px 3px 0 white, 4px 3px 0 white, -4px 4px 0 white, -3px 4px 0 white, -2px 4px 0 white, -1px 4px 0 white, 0px 4px 0 white, 1px 4px 0 white, 2px 4px 0 white, 3px 4px 0 white, 4px 4px 0 white, -5px -5px 0 white, -4px -5px 0 white, -3px -5px 0 white, -2px -5px 0 white, -1px -5px 0 white, 0px -5px 0 white, 1px -5px 0 white, 2px -5px 0 white, 3px -5px 0 white, 4px -5px 0 white, 5px -5px 0 white, -5px -4px 0 white, -4px -4px 0 white, -3px -4px 0 white, -2px -4px 0 white, -1px -4px 0 white, 0px -4px 0 white, 1px -4px 0 white, 2px -4px 0 white, 3px -4px 0 white, 4px -4px 0 white, 5px -4px 0 white, -5px -3px 0 white, -4px -3px 0 white, -3px -3px 0 white, -2px -3px 0 white, -1px -3px 0 white, 0px -3px 0 white, 1px -3px 0 white, 2px -3px 0 white, 3px -3px 0 white, 4px -3px 0 white, 5px -3px 0 white, -5px -2px 0 white, -4px -2px 0 white, -3px -2px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, 3px -2px 0 white, 4px -2px 0 white, 5px -2px 0 white, -5px -1px 0 white, -4px -1px 0 white, -3px -1px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, 3px -1px 0 white, 4px -1px 0 white, 5px -1px 0 white, -5px 0px 0 white, -4px 0px 0 white, -3px 0px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, 3px 0px 0 white, 4px 0px 0 white, 5px 0px 0 white, -5px 1px 0 white, -4px 1px 0 white, -3px 1px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, 3px 1px 0 white, 4px 1px 0 white, 5px 1px 0 white, -5px 2px 0 white, -4px 2px 0 white, -3px 2px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, 3px 2px 0 white, 4px 2px 0 white, 5px 2px 0 white, -5px 3px 0 white, -4px 3px 0 white, -3px 3px 0 white, -2px 3px 0 white, -1px 3px 0 white, 0px 3px 0 white, 1px 3px 0 white, 2px 3px 0 white, 3px 3px 0 white, 4px 3px 0 white, 5px 3px 0 white, -5px 4px 0 white, -4px 4px 0 white, -3px 4px 0 white, -2px 4px 0 white, -1px 4px 0 white, 0px 4px 0 white, 1px 4px 0 white, 2px 4px 0 white, 3px 4px 0 white, 4px 4px 0 white, 5px 4px 0 white, -5px 5px 0 white, -4px 5px 0 white, -3px 5px 0 white, -2px 5px 0 white, -1px 5px 0 white, 0px 5px 0 white, 1px 5px 0 white, 2px 5px 0 white, 3px 5px 0 white, 4px 5px 0 white, 5px 5px 0 white;
+}
+
+/* line 331, ../sass/screen.scss */
 #flash {
   background-image: url(../assets/images/isitpossible.gif);
   background-size: cover;
@@ -1000,7 +1006,7 @@ code.highlight em {
   background-repeat: no-repeat;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #state {
   background-image: url(../assets/images/map.gif);
   background-size: cover;
@@ -1010,7 +1016,7 @@ code.highlight em {
   padding: 5rem 0;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 #c {
   background-image: url(../assets/images/fuckme.gif);
   background-size: cover;
@@ -1020,7 +1026,7 @@ code.highlight em {
   padding: 5rem;
 }
 
-/* line 329, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 #example-plugin {
   background-image: url(../assets/images/yes.gif);
   background-size: cover;
@@ -1030,7 +1036,7 @@ code.highlight em {
   padding: 5rem;
 }
 
-/* line 339, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 #roadmap {
   background-image: url(../assets/images/future.gif);
   background-size: cover;
@@ -1040,29 +1046,29 @@ code.highlight em {
   padding: 5rem;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 #resources {
   font-size: 1rem;
 }
-/* line 353, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 #resources h2 {
   font-size: 3rem;
 }
-/* line 357, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 #resources h3 {
   font-size: 2rem;
 }
-/* line 361, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 #resources a {
   margin: 0.5em;
 }
 
-/* line 366, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 #warning {
   display: none;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .no-flexbox #warning {
   position: absolute;
   display: block;
@@ -1075,7 +1081,7 @@ code.highlight em {
   text-align: center;
   z-index: 10000;
 }
-/* line 383, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .no-flexbox #warning p {
   display: block;
   margin: 100px auto;
@@ -1083,17 +1089,17 @@ code.highlight em {
   line-height: 1.5;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .touch #preloader {
   display: none;
 }
-/* line 397, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .touch #deck {
   position: static;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-/* line 403, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .touch .slide {
   display: -webkit-flex;
   -webkit-flex-direction: column;
@@ -1113,13 +1119,13 @@ code.highlight em {
   opacity: 1;
   pointer-events: auto;
 }
-/* line 412, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .touch .slide--iframe {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 419, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   html {
     font-size: .3em;
   }
