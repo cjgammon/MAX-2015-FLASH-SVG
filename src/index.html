@@ -46,10 +46,10 @@
 					 width="300" height="300" viewBox="0 0 300 300" xml:space="preserve">
 					<defs>
 						<circle id="SVGID_1_" cx="150" cy="150" r="103.3"/>
+            <clipPath id="SVGID_2_">
+              <use xlink:href="#SVGID_1_"  overflow="visible"/>
+            </clipPath>
 					</defs>
-					<clipPath id="SVGID_2_">
-						<use xlink:href="#SVGID_1_"  overflow="visible"/>
-					</clipPath>
 
 					<circle id="me-circle-1" fill="#61AF93" cx="150" cy="150" r="118.2"/>
 					<circle id="me-circle-2" fill="#FFFFFF" cx="150" cy="150" r="103.3"/>
@@ -377,30 +377,27 @@
                 <header>identity crisis</header>
       </section>
 
-      <section id="embed-inline" class="slide" data-class="basic" data-color="#5e7f70" data-trans="2">
-                <h2>inline!</h2>
-                <h4>dynamically manipulate</h4>
+      <section id="embed-inline" class="slide slide--iframe slide--full" data-class="iframe" data-color="#999999" data-src="external/embed/embed.html" data-trans="2">
       </section>
 
-      <section id="when-to-use" class="slide" data-class="basic" data-color="#5e7f70">
+      <section id="when-to-use" class="slide" data-class="basic" data-color="#5e7f70" data-trans="7">
                 <h2>when to use?</h2>
-                <h4>css <em>vs</em> canvas <em>vs</em> webgl <em>vs</em> svg</h4>
-            </section>
+      </section>
 
-            <section id="svg-code" class="slide" data-class="basic" data-color="#333333">
+      <section id="svg-code" class="slide" data-class="basic" data-color="#333333">
                 <code><pre>&lt;svg width="100" height="100"&gt;
     &lt;circle cx="50" cy="50" r="50"/&gt;
 &lt;/svg&gt;</pre></code>
-            </section>
+      </section>
 
-            <section id="svg-illustrator" class="slide" data-class="basic" data-color="#efefef">
-                <img src="assets/images/scene.svg" width="100%" height="100%"/>
-            </section>
+      <section id="svg-illustrator" class="slide" data-class="basic" data-color="#efefef">
+          <img src="assets/images/scene.svg" width="100%" height="100%"/>
+      </section>
 
-            <section id="svg-demo-code" class="slide slide--iframe" data-class="iframe" data-color="#333333" data-src="external/svg-demo-code/scene.html">
-            </section>
+      <section id="svg-demo-code" class="slide slide--iframe" data-class="iframe" data-color="#333333" data-src="external/svg-demo-code/scene.html">
+      </section>
 
-            <section id="svg-features" class="slide" data-class="basic" data-color="#5e7f70" data-trans="1">
+      <section id="svg-features" class="slide" data-class="basic" data-color="#5e7f70" data-trans="1">
 				<h2>Features</h2>
 				<h4>Masking</h4>
 				<h4>Clipping</h4>
@@ -427,17 +424,19 @@
 			</section>
 
       <section id="snap" class="slide" data-class="basic" data-color="#5e7f70">
-				<header>Snap.svg</header>
-                <img src="assets/images/snaplogo.svg" width="400px"/><br/>
+			    <header>Snap.svg</header>
+          <img src="assets/images/snaplogo.svg" width="400px"/><br/>
 			</section>
 
       <section id="snap-code" class="slide" data-class="basic" data-color="#5e7f70">
-                <code><pre>var s = new Snap(100, 100);
-var circ = s.circle(50, 50, 50);</pre></code>
+          <code><pre>var s = new Snap(100, 100);
+var circ = s.circle(50, 50, 50);
+circ.attr({fill: "#ff0000"});
+circ.animate({r: 10}, 1000);</pre></code>
 			</section>
 
       <section id="snap-code-2" class="slide" data-class="basic" data-color="#5e7f70">
-                <code><pre>var s = new Snap(100, 100);
+          <code><pre>var s = new Snap(100, 100);
 Snap.load('dragon.svg', function (f) {
     s.append(f);
 });</pre></code>
@@ -452,54 +451,97 @@ Snap.load('dragon.svg', function (f) {
       <section id="svg-demo-3" class="slide slide--iframe" data-class="iframe" data-color="#ffffff" data-src="external/snap-ad/site/index.html">
 			</section>
 
-      <section id="animation" class="slide" data-class="basic" data-color="#cc2200" data-trans="1">
+      <section id="animation" class="slide" data-class="basic" data-color="#ffffff">
 				<h2 class="heavy">animation</h2>
 			</section>
 
-      <section id="animation-code-demo" class="slide" data-class="basic" data-color="#ffffff" data-trans="3">
+      <section id="animation-code-demo" class="slide" data-class="basic" data-color="#ffffff">
                 <h2 class="heavy">coded<br/> animation</h2>
-                <h4>generative animation</h4>
 			</section>
 
-      <section id="animation-timeline-demo" class="slide slide--iframe slide--full" data-class="iframe" data-color="#ffffff" data-src="external/homestar/index.html" data-trans="3">
+      <section id="greensock" class="slide" data-class="basic" data-color="rgb(38, 38, 38)" data-trans="3">
+          <h2>GSAP</h2>
+          <h4><span style="color: #88CE02">greensock</span> animation platform</h4>
+			</section>
+
+      <section id="greensock-code" class="slide" data-class="basic" data-color="rgb(38, 38, 38)" data-trans="3">
+          <code><pre>
+TweenMax.to('#elem', 1, {
+    x: 100,
+    ease: Back.easeOut
+  });
+          </pre></code>
+			</section>
+
+      <section id="greensock-code=2" class="slide" data-class="basic" data-color="rgb(38, 38, 38)" data-trans="3">
+          <code><pre>
+var tl = new TimelineMax({repeat: -1});
+
+tl.to('#elem', 1, {x: 100})
+.to('#elem', 1, {y: 100})
+.to('#elem', 1, {scaleX: 0.5}, '-=1');
+          </pre></code>
+			</section>
+
+      <section id="greensock-draw" class="slide" data-class="basic" data-color="rgb(38, 38, 38)">
+        <header><span style="color: #88CE02">greensock</span> animation platform</header>
+        <h2><span style="color:#88CE02;font-weight:800;">draw</span>SVG</h2>
+			</section>
+
+      <section id="greensock-code=3" class="slide" data-class="basic" data-color="rgb(38, 38, 38)" data-trans="3">
+          <code><pre>
+TweenMax.to('#elem', 1, {
+    drawSVG: "50%"
+  });
+          </pre></code>
+			</section>
+
+      <section id="greensock-morph" class="slide" data-class="basic" data-color="rgb(38, 38, 38)">
+        <header><span style="color: #88CE02">greensock</span> animation platform</header>
+        <h2><span style="color:#88CE02;font-weight:800;">morph</span>SVG</h2>
+			</section>
+
+      <section id="greensock-code-4" class="slide" data-class="basic" data-color="rgb(38, 38, 38)" data-trans="3">
+          <code><pre>
+TweenMax.to('#elem', 1, {
+    morphSVG: {shape: '#shape'}
+  });
+          </pre></code>
+			</section>
+
+      <section id="animation-timeline-demo" class="slide slide--iframe slide--full" data-class="iframe" data-color="#ffffff" data-src="external/homestar/index.html">
                 <h2 class="heavy">timeline<br/> animation</h2>
-                <h4>styled animation</h4>
 			</section>
 
-      <section id="flash" class="slide" data-class="basic" data-color="#ffffff">
+      <section id="possible" class="slide" data-class="basic" data-color="#ffffff">
 			</section>
 
-      <section id="flash-custon-platforms" class="slide" data-class="basic" data-color="#5e7f70">
+      <section id="flash-custon-platforms" class="slide" data-class="basic" data-color="#b51a20" data-trans="6">
                 <h2>flash</h2>
                 <h4>custom platform SDK</h4>
 			</section>
 
-      <section id="c" class="slide" data-class="basic" data-color="#5e7f70">
+      <section id="c" class="slide" data-class="basic" data-color="#ffffff">
 				<h2>C++</h2>
 			</section>
 
-      <section id="example-plugin" class="slide" data-class="basic" data-color="#5e7f70">
+      <section id="example-plugin" class="slide" data-class="basic" data-color="#ffffff">
                 <h2><a href="https://helpx.adobe.com/flash/using/enabling-support-custom-platforms.html" target="blank">example</a></h2>
                 <h4>outputs javascript</h4>
 			</section>
 
-      <section id="snap-svg-animator" class="slide" data-class="basic" data-color="#5e7f70">
-                <h2>Snap.SVG<br/> Animator</h2>
+      <section id="snap-svg-animator" class="slide slide--iframe slide--full" data-class="in-out" data-color="#333333" data-src="external/animator/animator.html" data-trans="1">
 			</section>
 
-      <section id="animator-demo" class="slide slide--iframe slide--full" data-class="iframe" data-color="#ffffff" data-src="external/animator/promo.html">
+      <section id="animator-demo" class="slide slide--iframe slide--full" data-class="iframe" data-color="#333333" data-src="external/promo/promo.html">
 			</section>
 
-      <section id="workflow" class="slide" data-class="basic" data-color="#5e7f70">
-                <h2>workflow</h2>
-                <h4>AI-FLA-SVG</h4>
-			</section>
+      <section id="workflow" class="slide slide--iframe slide--full" data-class="in-out" data-color="#000000" data-src="external/workflow/workflow.html" data-trans="7">
+        <header>workflow</header>
+      </section>
 
-      <section id="where" class="slide" data-class="basic" data-color="#5e7f70">
-        <a href="https://creative.adobe.com/addons" target="_blank">
-            <h2>add-ons</h2>
-            <h3>portal</h3>
-        </a>
+      <section id="where" class="slide slide--iframe slide--full" data-class="in-out" data-color="#ffffff" data-src="external/addons/addons.html" data-trans="3">
+        <header><a href="https://creative.adobe.com/addons" target="_blank">add-ons portal</a></header>
 			</section>
 
       <section id="state" class="slide" data-class="basic" data-color="#5e7f70">
@@ -508,11 +550,11 @@ Snap.load('dragon.svg', function (f) {
 
       <section id="features" class="slide" data-class="basic" data-color="#5e7f70">
 				<h2>Features</h2>
-                <h4>nested movieclips</h4>
-                <h4>shapes</h4>
-                <h4>raster images</h4>
-                <h4>patterns</h4>
-                <h4>masks</h4>
+        <h4>nested movieclips</h4>
+        <h4>shapes</h4>
+        <h4>raster images</h4>
+        <h4>patterns</h4>
+        <h4>masks</h4>
 			</section>
 
       <section id="output" class="slide" data-class="basic" data-color="#5e7f70">
@@ -522,7 +564,7 @@ Snap.load('dragon.svg', function (f) {
                 <h4>JSON (Timeline Data)</h4>
       </section>
 
-      <section id="example-code" class="slide" data-class="basic" data-color="#5e7f70">
+      <section id="example-code" class="slide" data-class="basic" data-color="#333333">
                 <code><pre>var anim = new SVGAnim(
                 json,
                 width,
@@ -561,7 +603,7 @@ Snap.load('dragon.svg', function (f) {
                 <h4>JSON - ~20k-300k</h4>
       </section>
 
-      <section id="filesize" class="slide" data-class="basic" data-color="#5e7f70">
+      <section id="filesize" class="slide" data-class="basic" data-color="rgb(38, 38, 38)" data-trans="3">
                 <a href="http://greensock.com/html5-banners" target="_blank">
                     <h2>Solutions for Banner Ads</h2>
                     <h4>in the Post-Flash World</h4>
@@ -577,16 +619,23 @@ Snap.load('dragon.svg', function (f) {
 			</section>
 
       <section id="github" class="slide" data-class="basic" data-color="#5e7f70">
-                <h2>open source!</h2>
-                <h4><a href="https://github.com/cjgammon/SnapSVG-Animator" target="_blank">http://bit.ly/svganim</a></h4>
+          <header>open source</header>
+          <img src="assets/images/github.svg" width="300"/><br/>
+          <h4><a href="https://github.com/cjgammon/SnapSVG-Animator" target="_blank">bit.ly/svganim</a></h4>
 			</section>
 
-			<section id="thanks" class="slide" data-class="basic" data-color="#5e7f70">
+			<section id="thanks" class="slide" data-class="basic" data-color="#333" data-trans="7">
 				<h2>thanks</h2>
-				<!-- <h4><a href="http://bit.ly/sxweb2015" target="_blank">http://bit.ly/sxweb2015</a></h4> -->
+        <h4><a href="https://github.com/cjgammon/SnapSVG-Animator" target="_blank">bit.ly/svganim</a></h4>
 				<h4><a href="http://www.twitter.com/cjgammon" target="_blank">@cjgammon</a></h4>
 			</section>
 
+
+      <section id="qa" class="slide" data-class="basic" data-color="#333" data-trans="8">
+				<h2>Q&amp;A</h2>
+        <h4><a href="https://github.com/cjgammon/SnapSVG-Animator" target="_blank">bit.ly/svganim</a></h4>
+				<h4><a href="http://www.twitter.com/cjgammon" target="_blank">@cjgammon</a></h4>
+			</section>
 		</div>
 
 		<div class="fixed right">

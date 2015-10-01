@@ -3,28 +3,27 @@
         <head>
         <style>
         body{
-            overflow: hidden;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+          overflow: hidden;
+        }
+        svg{
+          width: 100vw;
+          height: 100vh;
         }
         </style>
         </head>
 
         <body>
     <script src="./SnapSVGAnimator/js/vendor/snap.svg/snap.svg-min.js"></script>
-    <script src="./SnapSVGAnimator/js/SnapSVGAnimator.min.js"></script>
+    <script src="./SnapSVGAnimator/js/SnapSVGAnimator.js"></script>
 
     <script type="text/javascript">
-        var jsonfile = "cover.json",
-            fps = 30,
+        var jsonfile = "workflow.json",
+            fps = 60,
             width = 1024,
             height = 768,
             AJAX_req,
-            loaded = false;
+            loaded = false,
+            pauseframe = 40;
 
     AJAX_JSON_Req(jsonfile);
 
@@ -39,12 +38,16 @@
                            height,
                            fps);
 
-            comp.s.attr('preserveAspectRatio', 'xMidYMid meet');
-            comp.s.attr('viewBox', "0 0 " + width + " " + height);
+             setTimeout(function () {
+                 comp.play();
+             }, 1000);
 
-            setTimeout(function () {
-                comp.play();
-            }, 1000);
+             var i = setInterval(function () {
+                 if (comp.movieclip.m_currentFrameNo > pauseframe) {
+                     comp.pause();
+                     clearInterval(i);
+                 }
+             }, 10);
         }
     }
 
@@ -58,6 +61,21 @@
         AJAX_req.send();
     }
 
+    window.animIn = function () {
+        AJAX_JSON_Req(jsonfile);
+    }
+
+    window.animOut = function (cb) {
+        if (comp && comp.movieclip.m_currentFrameNo > pauseframe) {
+            comp.play();
+        }
+
+        setInterval(function () {
+            if (comp.movieclip.m_currentFrameNo >= parseInt(comp.movieclip.m_frameCount)) {
+                cb();
+            }
+        }, 10);
+    }
             </script>
         </body>
         </html>

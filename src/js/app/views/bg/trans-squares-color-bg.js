@@ -1,15 +1,15 @@
 define(function (require) {
-	
+
 	var Vars = require('pres/models/vars'),
 		BgCover;
-	
+
 	require('tweenmax');
-	
+
 	BgCover = function () {
 		var instance = this,
 			delta = 0,
 			slide;
-		
+
 		instance.init = function (ctx, color) {
 			instance.alive = true;
 			instance.ctx = ctx;
@@ -18,10 +18,10 @@ define(function (require) {
             instance.colors = [];
             instance.squares = [];
             instance.squareSize = 100;
-			
+
 			slide = Vars.get('slides').at(Vars.get('currentSlide'));
 			instance.color = slide.get('view').$el.data('color');
-			
+
             instance.tl = new TimelineMax({onUpdate: instance.render, repeat: -1, onRepeat: instance.recolor});
 
             var _x = -instance.squareSize / 2,
@@ -34,9 +34,9 @@ define(function (require) {
             }
 
             //populate squares
-            for (i = 0; i < instance.width / instance.squareSize; i += 1) {
-                for (j = 0; j < instance.height / instance.squareSize; j += 1) {
-                    
+            for (i = 0; i < instance.width / instance.squareSize + 1; i += 1) {
+                for (j = 0; j < instance.height / instance.squareSize + 1; j += 1) {
+
                     instance.squares.push({x: _x, y: _y, s: 0, c: randomColor()});
                     instance.tl.add(new TweenMax.to(instance.squares[k], 0.4, {s: 1, ease: Quad.easeOut}), k * 0.01);
 
@@ -58,13 +58,13 @@ define(function (require) {
             }
 
         };
-		
+
 		instance.render = function () {
 			if (instance.alive) {
 				instance.drawSquares();
-			}	
+			}
 		};
-		
+
         instance.drawSquares = function () {
             for (i = 0; i < instance.squares.length; i += 1) {
                 instance.ctx.save();
@@ -107,15 +107,15 @@ define(function (require) {
 
 		this.destroy = function () {
 			delta = null;
-			
+
 			instance.tl = null;
 			instance.alive = null;
-			
+
 			instance.init = null;
 			instance.render = null;
 		};
 	};
-	
+
 	return BgCover;
-	
+
 });

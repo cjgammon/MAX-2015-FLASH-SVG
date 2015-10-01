@@ -17,23 +17,25 @@
         }
 
         </style>
-        </head> 
-        
-        <body> 
+        </head>
+
+        <body>
     <script src="./SnapSVGAnimator/js/vendor/snap.svg/snap.svg-min.js"></script>
     <script src="./SnapSVGAnimator/js/SnapSVGAnimator.min.js"></script>
 
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         var jsonfile = "1999.json",
             fps = 30,
             width = 1024,
             height = 768,
-            AJAX_req;
+            AJAX_req,
+            loaded = false;
 
 
     function handle_AJAX_Complete() {
-        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
+        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 && loaded == false)
         {
+            loaded = true;
             json = JSON.parse(AJAX_req.responseText);
             comp = new SVGAnim(
                            json,
@@ -53,9 +55,7 @@
                     comp.pause();
                     clearInterval(i);
                 }
-
-
-            }, 100);
+            }, 10);
         }
     }
 
@@ -64,7 +64,7 @@
         AJAX_req = new XMLHttpRequest();
         AJAX_req.open("GET", url, true);
         AJAX_req.setRequestHeader("Content-type", "application/json");
-        
+
         AJAX_req.onreadystatechange = handle_AJAX_Complete;
         AJAX_req.send();
     }
@@ -79,10 +79,10 @@
         }
 
         setInterval(function () {
-            if (comp.movieclip.m_currentFrameNo >= parseInt(comp.movieclip.m_frameCount) - 1) {
+            if (comp.movieclip.m_currentFrameNo >= parseInt(comp.movieclip.m_frameCount)) {
                 cb();
             }
-        }, 100);
+        }, 10);
     }
 
             </script>

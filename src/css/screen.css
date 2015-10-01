@@ -729,7 +729,7 @@ b, h2, h3, h4 {
 }
 
 /* line 60, ../sass/screen.scss */
-.heavy {
+.heavy, h4 {
   font-weight: 800;
 }
 
@@ -939,12 +939,11 @@ code.highlight em {
 }
 
 /* line 251, ../sass/screen.scss */
-#cover {
+#cover, #image-format, #where {
   color: #666;
 }
-
-/* line 255, ../sass/screen.scss */
-#image-format {
+/* line 254, ../sass/screen.scss */
+#cover a, #image-format a, #where a {
   color: #666;
 }
 
@@ -1006,7 +1005,7 @@ code.highlight em {
 }
 
 /* line 337, ../sass/screen.scss */
-#flash {
+#possible {
   background-image: url(../assets/images/isitpossible.gif);
   background-size: cover;
   background-position: center center;

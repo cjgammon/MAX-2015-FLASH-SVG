@@ -3,48 +3,41 @@
         <head>
         <style>
         body{
-            overflow: hidden;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+          margin: 0;
+          overflow: hidden;
+        }
+        svg{
+          width: 100vw;
+          height: 100vh;
         }
         </style>
         </head>
 
         <body>
     <script src="./SnapSVGAnimator/js/vendor/snap.svg/snap.svg-min.js"></script>
-    <script src="./SnapSVGAnimator/js/SnapSVGAnimator.min.js"></script>
+    <script src="./SnapSVGAnimator/js/SnapSVGAnimator.js"></script>
 
     <script type="text/javascript">
-        var jsonfile = "cover.json",
-            fps = 30,
+        var jsonfile = "embed.json",
+            fps = 60,
             width = 1024,
             height = 768,
-            AJAX_req,
-            loaded = false;
+            AJAX_req;
 
     AJAX_JSON_Req(jsonfile);
 
     function handle_AJAX_Complete() {
-        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 && loaded == false)
+        if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
         {
-            loaded = true;
             json = JSON.parse(AJAX_req.responseText);
             comp = new SVGAnim(
                            json,
                            width,
                            height,
-                           fps);
+                           fps
+                           );
 
-            comp.s.attr('preserveAspectRatio', 'xMidYMid meet');
-            comp.s.attr('viewBox', "0 0 " + width + " " + height);
-
-            setTimeout(function () {
-                comp.play();
-            }, 1000);
+            comp.play();
         }
     }
 

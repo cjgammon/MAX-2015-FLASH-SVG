@@ -57,7 +57,7 @@ b, h2, h3, h4{
 	margin-bottom: 1rem;
 }
 
-.heavy{
+.heavy, h4{
 	font-weight: 800;
 }
 
@@ -248,12 +248,12 @@ code.highlight{
 	}
 }
 
-#cover{
+#cover, #image-format, #where{
     color: #666;
-}
 
-#image-format{
-    color: #666;
+		a{
+			color: #666;
+		}
 }
 
 #svg-code code{
@@ -334,7 +334,7 @@ code.highlight{
     @include stroke(5px, white);
 }
 
-#flash{
+#possible{
     background-image: url(../assets/images/isitpossible.gif);
     background-size: cover;
     background-position: center center;
