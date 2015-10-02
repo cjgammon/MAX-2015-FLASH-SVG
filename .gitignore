@@ -13,3 +13,5 @@ src/js/vendor/snap.svg/
 src/js/vendor/threejs/
 src/js/vendor/underscore-amd/nderscore-amd/
 src/assets/videos/
+src/external/morph/MorphSVGPlugin.js
+src/external/draw/DrawSVGPlugin.min.js

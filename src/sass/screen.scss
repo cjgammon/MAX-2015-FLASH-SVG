@@ -154,6 +154,7 @@ code{
 	font-weight: bold;
 	font-size: 3rem;
 	white-space: pre;
+	z-index: 20;
 
 	span{
 		color: #EDDE3E;
@@ -248,7 +249,7 @@ code.highlight{
 	}
 }
 
-#cover, #image-format, #where{
+#cover, #image-format, #where, #raphael, #snap{
     color: #666;
 
 		a{

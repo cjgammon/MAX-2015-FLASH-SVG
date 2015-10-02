@@ -838,43 +838,44 @@ code {
   font-weight: bold;
   font-size: 3rem;
   white-space: pre;
+  z-index: 20;
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 code span {
   color: #EDDE3E;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .slide {
   -webkit-box-sizing: border-box;
   padding: 1rem;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .slide--black {
   color: white;
   background: #333;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .slide--video video {
   position: absolute;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .slide--iframe {
   background: transparent;
 }
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .slide--iframe h2, .slide--iframe h4 {
   z-index: 2;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .slide--full {
   padding: 0;
 }
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .slide--full iframe {
   position: absolute;
   top: 0;
@@ -884,7 +885,7 @@ code span {
   pointer-events: none;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .slide--namecard.visible {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
@@ -893,32 +894,32 @@ code span {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 209, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .slide--namecard.visible .name, .slide--namecard.visible .handle {
   text-transform: none;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .fixed {
   position: fixed;
   bottom: 0;
   padding: .5em;
   z-index: 100;
 }
-/* line 220, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .fixed a {
   color: white;
 }
-/* line 224, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .fixed.right {
   right: 0;
 }
-/* line 228, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .fixed.left {
   left: 0;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .fixed, .fixed a {
   font-family: 'avenir', serif;
   font-weight: 100;
@@ -926,11 +927,11 @@ code span {
   text-transform: lowercase;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 code.highlight {
   color: rgba(255, 255, 255, 0.25);
 }
-/* line 243, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 code.highlight em {
   color: white;
   font-size: inherit;
@@ -938,21 +939,21 @@ code.highlight em {
   letter-spacing: inherit;
 }
 
-/* line 251, ../sass/screen.scss */
-#cover, #image-format, #where {
+/* line 252, ../sass/screen.scss */
+#cover, #image-format, #where, #raphael, #snap {
   color: #666;
 }
-/* line 254, ../sass/screen.scss */
-#cover a, #image-format a, #where a {
+/* line 255, ../sass/screen.scss */
+#cover a, #image-format a, #where a, #raphael a, #snap a {
   color: #666;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 #svg-code code {
   font-size: 2.5rem;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #svg-js h2 {
   margin-top: -1em;
 }
@@ -971,26 +972,26 @@ code.highlight em {
     fill: #fbcbf2;
   }
 }
-/* line 284, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .heart {
   transform-origin: 75px 75px;
   transform: scale(0.5);
   animation: beat 1s infinite;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #animation {
   background-image: url(../assets/images/lesley.gif);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 296, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #animation h2 {
   color: #222;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 #animation-code-demo {
   background-image: url(../assets/images/generative.gif);
   background-size: cover;
@@ -998,13 +999,13 @@ code.highlight em {
   background-repeat: no-repeat;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #animation-code-demo, #animation-timeline-demo {
   color: #333;
   text-shadow: 0 0 0 transparent, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, -3px -3px 0 white, -2px -3px 0 white, -1px -3px 0 white, 0px -3px 0 white, 1px -3px 0 white, 2px -3px 0 white, 3px -3px 0 white, -3px -2px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, 3px -2px 0 white, -3px -1px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, 3px -1px 0 white, -3px 0px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, 3px 0px 0 white, -3px 1px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, 3px 1px 0 white, -3px 2px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, 3px 2px 0 white, -3px 3px 0 white, -2px 3px 0 white, -1px 3px 0 white, 0px 3px 0 white, 1px 3px 0 white, 2px 3px 0 white, 3px 3px 0 white, -4px -4px 0 white, -3px -4px 0 white, -2px -4px 0 white, -1px -4px 0 white, 0px -4px 0 white, 1px -4px 0 white, 2px -4px 0 white, 3px -4px 0 white, 4px -4px 0 white, -4px -3px 0 white, -3px -3px 0 white, -2px -3px 0 white, -1px -3px 0 white, 0px -3px 0 white, 1px -3px 0 white, 2px -3px 0 white, 3px -3px 0 white, 4px -3px 0 white, -4px -2px 0 white, -3px -2px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, 3px -2px 0 white, 4px -2px 0 white, -4px -1px 0 white, -3px -1px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, 3px -1px 0 white, 4px -1px 0 white, -4px 0px 0 white, -3px 0px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, 3px 0px 0 white, 4px 0px 0 white, -4px 1px 0 white, -3px 1px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, 3px 1px 0 white, 4px 1px 0 white, -4px 2px 0 white, -3px 2px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, 3px 2px 0 white, 4px 2px 0 white, -4px 3px 0 white, -3px 3px 0 white, -2px 3px 0 white, -1px 3px 0 white, 0px 3px 0 white, 1px 3px 0 white, 2px 3px 0 white, 3px 3px 0 white, 4px 3px 0 white, -4px 4px 0 white, -3px 4px 0 white, -2px 4px 0 white, -1px 4px 0 white, 0px 4px 0 white, 1px 4px 0 white, 2px 4px 0 white, 3px 4px 0 white, 4px 4px 0 white, -5px -5px 0 white, -4px -5px 0 white, -3px -5px 0 white, -2px -5px 0 white, -1px -5px 0 white, 0px -5px 0 white, 1px -5px 0 white, 2px -5px 0 white, 3px -5px 0 white, 4px -5px 0 white, 5px -5px 0 white, -5px -4px 0 white, -4px -4px 0 white, -3px -4px 0 white, -2px -4px 0 white, -1px -4px 0 white, 0px -4px 0 white, 1px -4px 0 white, 2px -4px 0 white, 3px -4px 0 white, 4px -4px 0 white, 5px -4px 0 white, -5px -3px 0 white, -4px -3px 0 white, -3px -3px 0 white, -2px -3px 0 white, -1px -3px 0 white, 0px -3px 0 white, 1px -3px 0 white, 2px -3px 0 white, 3px -3px 0 white, 4px -3px 0 white, 5px -3px 0 white, -5px -2px 0 white, -4px -2px 0 white, -3px -2px 0 white, -2px -2px 0 white, -1px -2px 0 white, 0px -2px 0 white, 1px -2px 0 white, 2px -2px 0 white, 3px -2px 0 white, 4px -2px 0 white, 5px -2px 0 white, -5px -1px 0 white, -4px -1px 0 white, -3px -1px 0 white, -2px -1px 0 white, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, 2px -1px 0 white, 3px -1px 0 white, 4px -1px 0 white, 5px -1px 0 white, -5px 0px 0 white, -4px 0px 0 white, -3px 0px 0 white, -2px 0px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, 2px 0px 0 white, 3px 0px 0 white, 4px 0px 0 white, 5px 0px 0 white, -5px 1px 0 white, -4px 1px 0 white, -3px 1px 0 white, -2px 1px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white, 2px 1px 0 white, 3px 1px 0 white, 4px 1px 0 white, 5px 1px 0 white, -5px 2px 0 white, -4px 2px 0 white, -3px 2px 0 white, -2px 2px 0 white, -1px 2px 0 white, 0px 2px 0 white, 1px 2px 0 white, 2px 2px 0 white, 3px 2px 0 white, 4px 2px 0 white, 5px 2px 0 white, -5px 3px 0 white, -4px 3px 0 white, -3px 3px 0 white, -2px 3px 0 white, -1px 3px 0 white, 0px 3px 0 white, 1px 3px 0 white, 2px 3px 0 white, 3px 3px 0 white, 4px 3px 0 white, 5px 3px 0 white, -5px 4px 0 white, -4px 4px 0 white, -3px 4px 0 white, -2px 4px 0 white, -1px 4px 0 white, 0px 4px 0 white, 1px 4px 0 white, 2px 4px 0 white, 3px 4px 0 white, 4px 4px 0 white, 5px 4px 0 white, -5px 5px 0 white, -4px 5px 0 white, -3px 5px 0 white, -2px 5px 0 white, -1px 5px 0 white, 0px 5px 0 white, 1px 5px 0 white, 2px 5px 0 white, 3px 5px 0 white, 4px 5px 0 white, 5px 5px 0 white;
 }
 
-/* line 337, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #possible {
   background-image: url(../assets/images/isitpossible.gif);
   background-size: cover;
@@ -1012,7 +1013,7 @@ code.highlight em {
   background-repeat: no-repeat;
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #c {
   background-image: url(../assets/images/fuckme.gif);
   background-size: cover;
@@ -1022,7 +1023,7 @@ code.highlight em {
   padding: 5rem;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 #example-plugin {
   background-image: url(../assets/images/yes.gif);
   background-size: cover;
@@ -1032,29 +1033,29 @@ code.highlight em {
   padding: 5rem;
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 #resources {
   font-size: 1rem;
 }
-/* line 367, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 #resources h2 {
   font-size: 3rem;
 }
-/* line 371, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 #resources h3 {
   font-size: 2rem;
 }
-/* line 375, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 #resources a {
   margin: 0.5em;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 #warning {
   display: none;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .no-flexbox #warning {
   position: absolute;
   display: block;
@@ -1067,7 +1068,7 @@ code.highlight em {
   text-align: center;
   z-index: 10000;
 }
-/* line 397, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .no-flexbox #warning p {
   display: block;
   margin: 100px auto;
@@ -1075,17 +1076,17 @@ code.highlight em {
   line-height: 1.5;
 }
 
-/* line 407, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .touch #preloader {
   display: none;
 }
-/* line 411, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .touch #deck {
   position: static;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-/* line 417, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .touch .slide {
   display: -webkit-flex;
   -webkit-flex-direction: column;
@@ -1105,13 +1106,13 @@ code.highlight em {
   opacity: 1;
   pointer-events: auto;
 }
-/* line 426, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .touch .slide--iframe {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 433, ../sass/screen.scss */
+  /* line 434, ../sass/screen.scss */
   html {
     font-size: .3em;
   }
