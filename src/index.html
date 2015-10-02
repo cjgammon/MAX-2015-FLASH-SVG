@@ -34,7 +34,7 @@
 		<canvas id="bg"></canvas>
 
 		<div id="deck">
-        <section id="cover" class="slide slide--iframe slide--full" data-class="iframe" data-color="#ffffff" data-src="external/cover/cover.html">
+        <section id="cover" class="slide slide--iframe slide--full" data-class="iframe-full" data-color="#ffffff" data-src="external/cover/cover.html">
 				      <header>
 					           <div>October, 2015 &mdash; ADOBE MAX &mdash; L.A., CA</div>
               </header>
@@ -370,14 +370,14 @@
       <section id="svg" class="slide slide--iframe slide--full" data-class="in-out" data-color="#ffffff" data-src="external/1999/1999.html" data-trans="6">
 			</section>
 
-      <section id="vectors" class="slide slide--iframe slide--full" data-class="iframe" data-color="#333333" data-src="external/e-vector/index.html" data-trans="7">
+      <section id="vectors" class="slide slide--iframe slide--full" data-class="iframe-full" data-color="#333333" data-src="external/e-vector/index.html" data-trans="7">
 			</section>
 
       <section id="image-format" class="slide slide--iframe slide--full" data-class="in-out" data-color="#ffffff" data-src="external/identity/identity.html" data-trans="3">
         <header>identity crisis</header>
       </section>
 
-      <section id="embed-inline" class="slide slide--iframe slide--full" data-class="iframe" data-color="#999999" data-src="external/embed/embed.html" data-trans="2">
+      <section id="embed-inline" class="slide slide--iframe slide--full" data-class="iframe-full" data-color="#999999" data-src="external/embed/embed.html" data-trans="2">
       </section>
 
       <section id="when-to-use" class="slide" data-class="basic" data-color="#333333" data-trans="7">
@@ -414,7 +414,11 @@
       <section id="svg-demo-1" class="slide slide--iframe" data-class="iframe" data-color="#ffffff" data-src="external/box2d/app/index.html">
 			</section>
 
-      <section id="dmitry" class="slide slide--video" data-class="video" data-color="#ffffff" data-video="assets/videos/dmitry.mp4">
+      <section id="dmitry1" class="slide" data-class="basic" data-color="#333333">
+          <h3 class="heavy">Dmitry Baranovskiy</h3>
+			</section>
+
+      <section id="dmitry" class="slide slide--video" data-class="video" data-color="#333333" data-video="assets/videos/dmitry.mp4">
           <h3 class="heavy">Dmitry Baranovskiy</h3>
 			</section>
 
@@ -442,7 +446,7 @@ Snap.load('dragon.svg', function (f) {
 });</pre></code>
 			</section>
 
-      <section id="snap-illustrator" class="slide slide--iframe" data-class="iframe" data-color="#efefef" data-trans="2" data-src="external/snap-illus/index.html">
+      <section id="snap-illustrator" class="slide slide--iframe" data-class="iframe" data-color="#dddd99" data-trans="2" data-src="external/snap-illus/index.html">
       </section>
 
       <section id="svg-demo-2" class="slide slide--iframe" data-class="iframe" data-color="#ffffff" data-src="external/snap-game/index.html">
@@ -548,8 +552,8 @@ tl.to('#elem', 1, {x: 100})
 			</section>
 
       <section id="flash-custon-platforms" class="slide" data-class="basic" data-color="#b51a20" data-trans="6">
-                <h2>flash</h2>
-                <h4>custom platform SDK</h4>
+          <h2>flash</h2>
+          <h4>custom platform SDK</h4>
 			</section>
 
       <section id="c" class="slide" data-class="basic" data-color="#ffffff">
@@ -557,8 +561,8 @@ tl.to('#elem', 1, {x: 100})
 			</section>
 
       <section id="example-plugin" class="slide" data-class="basic" data-color="#ffffff">
-        <h2><a href="https://helpx.adobe.com/flash/using/enabling-support-custom-platforms.html" target="blank">example</a></h2>
-        <h4>outputs javascript</h4>
+        <a href="https://helpx.adobe.com/flash/using/enabling-support-custom-platforms.html" target="blank"><h4>example generates</h4>
+        <h2>javascript</h2></a>
 			</section>
 
       <section id="snap-svg-animator" class="slide slide--iframe slide--full" data-class="in-out" data-color="#333333" data-src="external/animator/animator.html" data-trans="1">
@@ -649,7 +653,12 @@ tl.to('#elem', 1, {x: 100})
                 <h4>any renderer!</h4>
 			</section>
 
-      <section id="github" class="slide" data-class="basic" data-color="#333333">
+      <section id="portable" class="slide" data-class="basic" data-color="#333333">
+                <h2>portable output</h2>
+                <h4><a href="https://www.youtube.com/watch?v=S6P_N2JWSrc" target="_blank">Single SVG File – Chris Gannon</a></h4>
+			</section>
+
+      <section id="github" class="slide" data-class="basic" data-color="#666666" data-trans="6">
           <header>open source</header>
           <img src="assets/images/github.svg" width="300"/><br/>
           <h4><a href="https://github.com/cjgammon/SnapSVG-Animator" target="_blank">bit.ly/svganim</a></h4>
@@ -660,7 +669,6 @@ tl.to('#elem', 1, {x: 100})
         <h4><a href="http://bit.ly/svg-anim" target="_blank">bit.ly/svg-anim</a></h4>
 				<h4><a href="http://www.twitter.com/cjgammon" target="_blank">@cjgammon</a></h4>
 			</section>
-
 
       <section id="qa" class="slide" data-class="basic" data-color="#333" data-trans="8">
 				<h2>Q&amp;A</h2>
