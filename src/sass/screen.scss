@@ -48,7 +48,7 @@ body{
 	background: black;
 }
 
-b, h2, h3, h4{
+b, h2, h3, h4, h5{
 	position: relative;
 	font-weight: 100;
 	text-transform: uppercase;
@@ -57,7 +57,7 @@ b, h2, h3, h4{
 	margin-bottom: 1rem;
 }
 
-.heavy, h4{
+.heavy, h4, h5{
 	font-weight: 800;
 }
 
@@ -75,6 +75,10 @@ h3{
 
 h4{
 	font-size: 2rem;
+}
+
+h5{
+	font-size: 1.5rem;
 }
 
 a{
