@@ -5,7 +5,7 @@ Presentation on Snap.SVG Animator and Animation with SVG using Flash Professiona
 ##Instructions
 
 To run you must do the following:
-
+* Run `npm install` from the root of the project
 * Ensure you have [bower](http://bower.io/) installed
 * Run `bower install` from the root of the project
 * For browser security restrictions the site must be run on a server.
@@ -15,5 +15,3 @@ To run you must do the following:
 
 * [flash custom platform - info](https://helpx.adobe.com/flash/using/custom-platform-support.html)
 * [flash custom platform - svg plugin](https://github.com/cjgammon/Flash-Plugin-SnapPlatform)
-
-
